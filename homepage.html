@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Nepal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://source.unsplash.com/1600x900/?nepal,mountains') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn-custom {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+    }
+
+    nav {
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Explore Nepal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+          <!-- Profile dropdown -->
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://ui-avatars.com/api/?name=Abi+Khatri&background=0D8ABC&color=fff&rounded=true&size=30" alt="Abi Khatri" class="rounded-circle me-2" width="30" height="30" />
+              Abi Khatri
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+              <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+              <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Explore Nepal</h1>
+    <p>Adventure begins where the road ends — uncover Nepal’s untouched beauty, culture, and thrill.</p>
+    <a href="#blogs" class="btn btn-light btn-custom">Start Exploring</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 position-relative" style="
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: #f0f0f0;
+  ">
+    <div class="container position-relative" style="z-index: 1; font-family: 'Roboto', sans-serif;">
+      <h2 class="mb-4 text-center" style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 3rem;">
+        About Us
+      </h2>
+      <p class="lead text-center mb-5" style="max-width: 700px; margin: auto; font-size: 1.3rem; letter-spacing: 0.03em; line-height: 1.6;">
+        Explore Nepal is your gateway to thrilling adventures, cultural riches, and awe-inspiring natural beauty. We strive to connect travelers with the heart and soul of Nepal.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-unstyled fs-5" style="line-height: 2;">
+            <li style="margin-bottom: 0.8rem;">? <strong>Inspire</strong> adventure seekers to explore Nepal’s breathtaking landscapes and hidden gems.</li>
+            <li style="margin-bottom: 0.8rem;">?? <strong>Dare</strong> to push boundaries — from thrilling mountain treks to vibrant cultural festivals.</li>
+            <li style="margin-bottom: 0.8rem;">?? <strong>Entertain</strong> and engage our community with exciting stories, tips, and travel guides.</li>
+            <li style="margin-bottom: 0.8rem;">?? <strong>Promote</strong> sustainable tourism that respects nature and local traditions.</li>
+            <li style="margin-bottom: 0.8rem;">?? <strong>Showcase</strong> the beauty of Nepal through stunning photography and personal experiences.</li>
+            <li style="margin-bottom: 0.8rem;">?? <strong>Connect</strong> travelers and locals for authentic cultural exchanges and friendships.</li>
+            <li style="margin-bottom: 0.8rem;">?? <strong>Encourage</strong> everyone to step out of their comfort zone and embrace the spirit of exploration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Explore Nepal. All Rights Reserved. Designed by Abiraj Gaire.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
